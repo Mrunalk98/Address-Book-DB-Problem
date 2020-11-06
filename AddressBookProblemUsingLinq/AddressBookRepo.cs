@@ -7,27 +7,31 @@ namespace AddressBookProblemUsingLinq
 {
     public class AddressBookRepo
     {
-        public static string FIRST_NAME = "FirstName";
-        public static string LAST_NAME = "LastName";
-        public static string ADDRESS = "Address";
-        public static string CITY = "City";
-        public static string STATE = "State";
-        public static string ZIP = "Zip";
-        public static string PHONE_NUMBER = "PhoneNumber";
-        public static string EMAIL = "Email";
+        public readonly DataTable addressBookTable = new DataTable();
 
-        public AddressBook addressBook = new AddressBook();
-        public void CreateAddressBook()
+        public List<AddressBook> InsertContact()
         {
-            DataTable AddressBookTable = new DataTable();
-            AddressBookTable.Columns.Add(FIRST_NAME);
-            AddressBookTable.Columns.Add(LAST_NAME);
-            AddressBookTable.Columns.Add(ADDRESS);
-            AddressBookTable.Columns.Add(CITY);
-            AddressBookTable.Columns.Add(STATE);
-            AddressBookTable.Columns.Add(ZIP);
-            AddressBookTable.Columns.Add(PHONE_NUMBER);
-            AddressBookTable.Columns.Add(EMAIL);
+            List<AddressBook> addressBooks = new List<AddressBook>()
+            {
+                new AddressBook() { FirstName="John", LastName="Doey", Address="120 jefferson", City="Riverside", State="NJ", Zip=80750, PhoneNumber="5896541589", Email="john@abc.com" },
+                new AddressBook() { FirstName="Jack", LastName="Ginis", Address="220 hobo Av.", City="New York",  State="PA", Zip=91190, PhoneNumber="7596541589",  Email="jack@abc.com" },
+                new AddressBook() { FirstName="Sam", LastName="Huges", Address="20th Street", City="SomeTown", State="PA", Zip=95750, PhoneNumber="4852541589", Email="sam@abc.com" },
+                new AddressBook() { FirstName="Abc", LastName="Tyler", Address="7452 Terrace", City="Riverside", State="SD", Zip=91240, PhoneNumber="8569541589", Email="ste@abc.com" }
+            };
+            Console.WriteLine("Contacts added successfully");
+            return addressBooks;
+        }
+
+        public void DisplayAddressBook(List<AddressBook> addressBooks)
+        {
+            Console.WriteLine("List of contacts in Address book : ");
+            Console.WriteLine("FirstName \t LastName \t Address \t City \t\t State \t ZipCode \t PhoneNumber \t EmailID");
+            foreach (var address in addressBooks)
+            {
+                Console.WriteLine(address.FirstName + " \t\t " + address.LastName + " \t\t " + address.Address + " \t " + address.City +
+                                " \t " + address.State + " \t " + address.Zip + " \t\t " + address.PhoneNumber + " \t " + address.Email);
+            }
+
         }
     }
 }
