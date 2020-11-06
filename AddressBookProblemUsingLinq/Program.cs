@@ -11,6 +11,7 @@ namespace AddressBookProblemUsingLinq
             AddressBookRepo repo = new AddressBookRepo();
             var addressBook = repo.InsertContact();
             repo.DisplayAddressBook(addressBook);
+            repo.EditContact(addressBook, "Jack");
         }
     }
 }

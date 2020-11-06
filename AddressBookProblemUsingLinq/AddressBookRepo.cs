@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Linq;
 using System.Text;
 
 namespace AddressBookProblemUsingLinq
@@ -32,6 +33,18 @@ namespace AddressBookProblemUsingLinq
                                 " \t " + address.State + " \t " + address.Zip + " \t\t " + address.PhoneNumber + " \t " + address.Email);
             }
 
+        }
+
+        public void EditContact(List<AddressBook> addressBooks, string name)
+        {
+            var record = addressBooks.Where(x => x.FirstName == name)
+                         .Select(x => { x.LastName = "Gene"; return x; }).ToList();
+            Console.WriteLine("\nUpdated Contact : ");
+            foreach (var address in record)
+            {
+                Console.WriteLine(address.FirstName + " \t\t " + address.LastName + " \t\t " + address.Address + " \t " + address.City +
+                                " \t " + address.State + " \t " + address.Zip + " \t\t " + address.PhoneNumber + " \t " + address.Email);
+            }
         }
     }
 }
