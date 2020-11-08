@@ -100,5 +100,17 @@ namespace RestSharpTestCase
             Assert.AreEqual("john@abc.com", dataResponse.Email);
         }
 
+        [TestMethod]
+        public void GivenEmployee_OnDelete_ShouldReturnSuccess()
+        {
+            // arrange
+            RestRequest request = new RestRequest("/addresses/4", Method.DELETE);
+
+            // act
+            IRestResponse response = client.Execute(request);
+
+            // assert
+            Assert.AreEqual(response.StatusCode, HttpStatusCode.OK);
+        }
     }
 }
