@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace AddressBookProblemUsingLinq
+namespace AddressBookSystemProblem
 {
     class Program
     {

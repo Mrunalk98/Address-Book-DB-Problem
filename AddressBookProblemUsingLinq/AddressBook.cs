@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AddressBookProblemUsingLinq
+namespace AddressBookSystemProblem
 {
     public class AddressBook
     {
