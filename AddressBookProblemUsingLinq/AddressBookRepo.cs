@@ -14,10 +14,10 @@ namespace AddressBookSystemProblem
         {
             List<AddressBook> addressBooks = new List<AddressBook>()
             {
-                new AddressBook() { FirstName="John", LastName="Doey", Address="120 jefferson", City="Riverside", State="NJ", Zip=80750, PhoneNumber="5896541589", Email="john@abc.com" },
-                new AddressBook() { FirstName="Jack", LastName="Ginis", Address="220 hobo Av.", City="New York",  State="PA", Zip=91190, PhoneNumber="7596541589",  Email="jack@abc.com" },
-                new AddressBook() { FirstName="Sam", LastName="Huges", Address="20th Street", City="SomeTown", State="PA", Zip=95750, PhoneNumber="4852541589", Email="sam@abc.com" },
-                new AddressBook() { FirstName="Abc", LastName="Tyler", Address="7452 Terrace", City="Riverside", State="SD", Zip=91240, PhoneNumber="8569541589", Email="ste@abc.com" }
+                new AddressBook() { FirstName="John", LastName="Doey", Address="120 jefferson", City="Riverside", State="NJ", Zip="80750", PhoneNumber="5896541589", Email="john@abc.com" },
+                new AddressBook() { FirstName="Jack", LastName="Ginis", Address="220 hobo Av.", City="New York",  State="PA", Zip="91190", PhoneNumber="7596541589",  Email="jack@abc.com" },
+                new AddressBook() { FirstName="Sam", LastName="Huges", Address="20th Street", City="SomeTown", State="PA", Zip="95750", PhoneNumber="4852541589", Email="sam@abc.com" },
+                new AddressBook() { FirstName="Abc", LastName="Tyler", Address="7452 Terrace", City="Riverside", State="SD", Zip="91240", PhoneNumber="8569541589", Email="ste@abc.com" }
             };
             Console.WriteLine("Contacts added successfully");
             return addressBooks;
