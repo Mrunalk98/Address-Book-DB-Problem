@@ -34,14 +34,14 @@
       "Email": "sam@abc.com"
     },
     {
-      "FirstName": "Johnny",
+      "FirstName": "John",
       "LastName": "Tyler",
       "Address": "20th Street",
       "City": "Riverside",
       "State": "SD",
       "Zip": "91240",
       "PhoneNumber": "8569541589",
-      "Email": "ste@abc.com",
+      "Email": "john@abc.com",
       "id": 4
     }
   ]
