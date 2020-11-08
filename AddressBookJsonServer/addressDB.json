@@ -1,0 +1,37 @@
+{
+	"addresses": [
+    {
+    	"Id": "1",
+	    "FirstName": "John",
+	    "LastName": "Doey",
+	    "Address": "120 jefferson",
+	    "City": "Riverside",
+	    "State": "NJ",
+	    "Zip": 80750,
+	    "PhoneNumber": "5896541589",
+	    "Email": "john@abc.com"
+		},
+		{
+    	"Id": "2",
+	    "FirstName": "Jack",
+	    "LastName": "Ginis",
+	    "Address": "220 hobo Av.",
+	    "City": "New York",
+	    "State": "PA",
+	    "Zip": 81750,
+	    "PhoneNumber": "6796541589",
+	    "Email": "jack@abc.com"
+		},
+		{
+    	"Id": "3",
+	    "FirstName": "Sam",
+	    "LastName": "Huges",
+	    "Address": "7452 Terrace",
+	    "City": "SomeTown",
+	    "State": "SA",
+	    "Zip": 77750,
+	    "PhoneNumber": "7776541589",
+	    "Email": "sam@abc.com"
+		}
+	]
+}
