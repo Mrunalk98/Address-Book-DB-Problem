@@ -19,6 +19,7 @@ insert into address_book_table values('Stephen', 'Tyler', '7452 Terrace', 'River
 insert into address_book_table values('Joan', 'Anne', '201 jefferson', 'Desert City', 'NJ', 70750, '8522541589', 'joan@abc.com');
 insert into address_book_table values('Sam', 'Huge', '20th Street', 'SomeTown', 'PA', 95750, '4852541589', 'sam@abc.com');
 
+select FirstName, LastName, COUNT(State) from address_book_table group by FirstName, LastName order by LastName;
 -- UC 4
 update address_book_table set PhoneNumber='9985637415' where FirstName='Joan';
 
